@@ -1,0 +1,693 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar - Easy Tutorials</title>
+</head>
+<header>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar {
+    /* background-color: rgb(34, 39, 39); */
+    position: relative;
+    color: #fff;
+    padding: 10px;
+    font-family: sans-serif;
+}
+.nav-bar::before{
+    content: " ";
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.30;
+
+}
+.nav-bar img {
+    height: 40px;
+    float: left;
+    margin: 3px 3px;
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+    margin: 6px 2px;
+    padding: 3px 12px;
+}
+
+
+.menu-right {
+    text-align: right;
+    margin-right: 30px;
+}
+
+ul li {
+    display: inline-block;
+    margin: 15px;
+    list-style: none;
+
+}
+
+span {
+    margin: 0 20px;
+    font-size: 28px;
+    cursor: pointer;
+    display: none;
+}
+
+@media only screen and (max-width: 1000px) {
+    span {
+        display: block;
+    }
+
+    .nav-bar img {
+        height: 40px;
+        /* float: left; */
+        margin: 1px 15px;
+    }
+
+
+    ul li {
+        display: block;
+    }
+
+    ul {
+        display: none;
+    }
+    
+}
+
+
+
+/* home container css  */
+
+.container {
+    /* background-color: rebeccapurple; */
+    display: flex;
+    justify-content: center;
+    /* width: 600px; */
+    height: 400px;
+}
+
+.home {
+    margin-top: 50px;
+    /* background-color: red; */
+    width: 900px;
+    height: 300px;
+}
+
+header {
+    position: relative;
+}
+
+header::before {
+    content: " ";
+    background: url('./image/background.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 90%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.90;
+}
+
+.devinfo {
+    /* text-align: center; */
+    padding: 12px 18px;
+}
+
+
+
+.pramery {
+    font-size: 3rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.secondery {
+    font-size: 17px;
+    font-family: 'Times New Roman', Times, serif;
+    width: 500px;
+    /* text-align: center; */
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 256px;
+}
+
+.h-third {
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.3rem;
+}
+
+.h-four {
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.3rem;
+    color: rgb(151, 146, 218);
+    margin: 21px 3px;
+}
+
+.h-five {
+    text-align: center;
+
+}
+
+.services-container {
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.item {
+    width: 900px;
+    display: block;
+    margin: 30px auto;
+}
+
+.services {
+    border-radius: 12px;
+    border: 1px solid black;
+    padding: 30px;
+    margin: 9px 12px;
+    background-color: rgb(212, 212, 212);
+}
+
+.services p {
+    text-align: center;
+}
+
+.services img {
+    height: 120px;
+    margin: auto;
+    display: block;
+}
+
+.center {
+    text-align: center;
+    margin: 25px 7px;
+    font-weight: bold;
+    font-size: 1rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.year {
+    display: flex;
+    margin-right: 23px;
+    /* justify-content: space-between; */
+}
+
+.vicky {
+    margin-left: 1px;
+    margin-top: 66px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+
+.vikash .del {
+    font-size: 1.6rem;
+    font-weight: bold;
+    font-family: sans-serif;
+    padding-left: 34px;
+    margin-top: 66px;
+    color: rgb(172, 130, 168);
+}
+
+.vikash .details {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+    margin-left: 34px;
+    margin-top: 20px;
+}
+
+.leader {
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+    /* margin: 34px 12px; */
+}
+
+.text {
+    width: 340px;
+    font-family: sans-serif;
+    margin: 34px 0px;
+}
+
+.text2 {
+    display: flex;
+}
+
+.first-pare {
+    width: 340px;
+    font-family: sans-serif;
+    /* font-weight: bold; */
+}
+
+.second-para {
+    padding: 0px 30px;
+    font-size: 1.6rem;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.read-more {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.read-more img {
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+
+}
+
+.read-more .website-developer {
+    display: flex;
+    background-color: rgb(226, 226, 226);
+    padding: 30px 50px;
+    /* border-radius: 5px; */
+}
+
+.deve-img {
+    margin: 4px 20px;
+
+}
+
+.deve-img img {
+    border-radius: 50px;
+}
+
+.read-more .read {
+    margin: 23px 9px;
+    padding: 10px 10px;
+    background-color: rgba(26, 150, 155, 0.904);
+    border: 1px solid black;
+    color: white;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+p {
+    text-align: center;
+    margin: 20px 3px;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+
+.news {
+    display: flex;
+    margin: 13px 8px;
+    padding: 12px 17px;
+    /* border: 1px solid black; */
+}
+
+.p-para1 {
+    margin: 0 12px;
+
+}
+
+.p-para2 {
+    margin: 3px 12px;
+    padding: 17px 15px;
+    background-color: rgb(190, 190, 190);
+    font-family: sans-serif;
+}
+
+.p-para3 {
+    margin: 3px 12px;
+    background-color: rgb(190, 190, 190);
+    padding: 17px 15px;
+    font-family: sans-serif;
+
+
+}
+
+.p-para6 {
+    margin: 3px 12px;
+    background-color: rgb(190, 190, 190);
+    padding: 17px 15px;
+    font-family: sans-serif;
+
+
+}
+
+.p-para7 {
+    margin: 3px 12px;
+    padding: 17px 15px;
+    background-color: rgb(190, 190, 190);
+    font-family: sans-serif;
+
+
+}
+
+.container-item {
+    background-color: rgb(203, 163, 241);
+    height: 900px;
+    width: 100%;
+}
+
+h1 {
+    padding: 50px 2px;
+    text-align: center;
+}
+
+.secondery-container {
+    display: block;
+    height: 601px;
+    width: 522px;
+    padding-top: 40px;
+    margin: auto;
+    background-color: rgb(187, 184, 190);
+}
+
+.center-container {
+    display: block;
+    height: 558px;
+    width: 445px;
+    margin: auto;
+    background-color: rgb(235, 234, 236);
+}
+
+.center-container .h-para1{
+    background-color: rgb(197, 149, 241);
+    padding: 25px 15px;
+    font-size: 18px;
+    /* font-family: sans-serif; */
+
+}
+
+
+
+.aman{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    
+}
+h2{
+    text-align: center;
+}
+.contact-email input{
+    padding: 6px 320px;
+    font-size: 18px;
+    margin: 4px 8px;
+}
+.contact-email{
+  font-size: 19px;
+}
+.contact-gender{
+  font-size: 19px;
+
+}
+.contact-Address{
+    font-size: 18px;
+}
+.contact-Address textarea{
+  margin: 12px 9px;
+  padding: 4px 260px;
+}
+
+.contact-gender input{
+    font-size: 18px;
+    margin: 12px 9px;
+}
+.contact-nationality{
+  font-size: 19px;
+  margin: 12px 9px;
+}
+.contact-btn input {
+    font-size: 11px;
+    margin: 3px 3px;
+    padding: 5px 4px;
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 6px;
+    color: red;
+  }
+
+
+.footer-bar{
+    margin: 12px 2px;
+    padding: 12px 12px;
+    text-align: center;
+    color: white;
+    width: auto;
+    background-color: black;
+}
+
+@media  screen and (max-width :1000px ){
+    .container .logo img{
+        display: none;
+    }
+    
+    .services-container{
+        flex-direction: column;
+    }
+    
+    .year{
+        flex-direction: column;
+    }
+    
+    .news{
+        flex-direction: column;
+    }
+    
+    .read-more{
+        flex-direction: column;
+    }
+    
+    .text2{
+        flex-direction: column;
+    }
+    
+    .read-more .website-developer{
+        padding: 10px 0px;
+        flex-wrap: wrap;
+    }
+    
+    .item{
+        width: auto;
+    }
+    
+    .secondery{
+        width: auto;
+    }
+    
+    .year{
+        text-align: center;
+    
+    }
+    
+    .leader{
+        text-align: center;
+    }
+    
+    .text{
+        text-align: center;
+    }
+    
+    .text2{
+        text-align: center;
+    }
+    
+    .second-para{
+        padding: 35px 7px;
+    }
+    
+    
+        .contact-email input{
+            padding: 6px 32px;
+            font-size: 18px;
+            margin: 4px 8px;
+        }
+       .contact-Address textarea{
+        margin: 12px 9px;
+        padding: 4px 32px;
+      }
+      .footer-bar{
+          font-size: 14px;
+      }
+    
+    
+}
+    </style>
+
+    <body>
+        <div class="nav-bar">
+            <img src="image/logo.png">
+            <div class="menu-right">
+                <span onClick="myFunction()">&#9776;</span>
+                <ul id="menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Blog's</a></li>
+                    <li><a href="#">Services</a></li>
+                </ul>
+            </div>
+
+
+        </div>
+        <div class="container">
+            <div class="home">
+                <div class="box">
+                    <div class="devinfo">
+                        <p class="pramery">I am John's</p>
+                        <p class="secondery">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium enim ut
+                            magnam delectus quos neque architecto? Delectus, sapiente?</p>
+                    </div>
+                    <div class="logo"><img src="./image/developer.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+</header>
+<div class="h-third">HOSTING IS EVEN BETTER <br>
+    WITH ALL THESE</div>
+<div class="h-four">FREE FEATURE</div>
+<div class="h-five">Sample text. Click select the text box. Click again or <br>
+    double clikc to start editing text</div>
+<script src="index.js"></script>
+<div class="item">
+    <div class="services-container">
+        <div class="services">
+            <img src="./image/1.jpg" width="120px" alt="">
+            <p class="center">UNLIMITED STORAGE</p>
+            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ut consequat.</P>
+        </div>
+        <div class="services">
+            <img src="./image/2.png" width="120px" alt="">
+            <p class="center">UNLIMITED STORAGE</p>
+            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ut consequatur .</P>
+        </div>
+        <div class="services">
+            <img src="./image/3.png" alt="">
+            <p class="center">UNLIMITED STORAGE</p>
+            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ut consequatur .</P>
+        </div>
+    </div>
+    <div class="year">
+        <div class="vicky">
+            TECHNOLOGY CONFERENCE <br>
+            2022
+        </div>
+        <div class="vikash">
+            <div class="del"> 23-25 SEPTEMBER</div>
+
+            <div class="details"> How to start your technology <br>
+                company</div>
+        </div>
+    </div>
+    <div class="leader">
+        LEADERSHIP CONVERSATION
+    </div>
+    <div class="text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, quo consequatur natus sint quam quibusdam
+        molestiae voluptatibus maxime.
+    </div>
+
+    <div class="text2">
+        <div class="first-pare">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus iste beatae
+            perferendis recusandae ipsum necessitatibus, alias?</div>
+        <div class="second-para">OUR TEAM</div>
+
+    </div>
+
+    <div class="read-more">
+        <div class="read">Read More</div>
+        <div class="website-developer">
+            <div class="deve-img"><img src="./image/4.jpg" alt="">
+            <p>Rohit Bhai </p></div>
+
+            <div class="deve-img"><img src="./image/5.jpg" alt="">
+         <p> vikash bhai</p>  </div>
+
+            <div class="deve-img"><img src="./image/5.jpg" alt=""> 
+            <p>Aman bhai</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="article">
+        <div class="article-para1">
+            <div class="news">
+                <div class="p-para1">1. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, laborum. Similique debitis consequuntur temporibus. Veniam ducimus dignissimos id deserunt accusantium?
+               </div>
+               <div class="p-para2">2. Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero quae nisi repellendus temporibus facilis doloremque labore. Nemo a ducimus ipsa?
+               </div>
+            </div>
+            <div class="news">
+                <div class="p-para3">3. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, laborum. Similique debitis consequuntur temporibus. Veniam ducimus dignissimos id deserunt accusantium?
+               </div>
+               <div class="p-para4">4. Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero quae nisi repellendus temporibus facilis doloremque labore. Nemo a ducimus ipsa?
+               </div>
+            </div>
+            <div class="news">
+                <div class="p-para5">5. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, laborum. Similique debitis consequuntur temporibus. Veniam ducimus dignissimos id deserunt accusantium?
+               </div>
+               <div class="p-para6">6. Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero quae nisi repellendus temporibus facilis doloremque labore. Nemo a ducimus ipsa ducimus dignissimos id deserunt accusantium?
+               </div>
+            </div>
+            <div class="news">
+                <div class="p-para7">7. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, laborum. Similique debitis consequuntur temporibus. Veniam ducimus dignissimos id deserunt accusantium?
+               </div>
+               <div class="p-para8">8. Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero quae nisi repellendus temporibus facilis doloremque labore. Nemo a ducimus ipsa?
+               </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="aman">
+    <div class="Contact-bar">
+        <h2>Contact</h2>
+        <div class="contact-email">Email ID : <input type="text" placeholder="Enter Your Email"></div>
+        <div class="contact-email">Password : <input type="password" placeholder="Enter Your Pass"></div>
+        <div class="contact-gender">Gender : Male <input type="radio" name="mygender"> Famale <input type="radio" name="mygender"></div>
+        <div class="contact-Address">Address : <br> <textarea name="" id="" cols="40" rows="3"></textarea></div>
+        <div class="contact-nationality">Nationality : -Indian : <input type="radio" name="mygender"> Other : <input type="radio" name="mygender"></div>
+        <div class="contact-btn"><input type="submit" value="Submit Now"><input type="reset" value="Reset Now"></div>
+        <footer>
+            <div class="footer-bar">
+                All Reverser @Copy 2022 Right Vikash Tech
+            </div>
+        </footer>
+</div>
+<script>
+    function myFunction(){
+    var x = document.getElementById("menu"); 
+     
+     if(x.style.display == "block")
+     {
+         x.style.display = "none";
+     }
+     else{
+         x.style.display = "block";
+     }
+ }
+</script>
+</body>
+</html>
